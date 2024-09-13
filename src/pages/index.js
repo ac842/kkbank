@@ -6,38 +6,37 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    {/* 英雄區域 */}
-    <div style={{
-      background: 'linear-gradient(135deg, #003366 0%, #0066cc 100%)',
-      color: 'white',
-      padding: '4rem 2rem',
-      borderRadius: '10px',
-      marginBottom: '2rem',
-      textAlign: 'center'
-    }}>
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>歡迎來到 KKBank</h1>
-      <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
-        您信賴的金融合作夥伴，為您的未來提供安全、創新的金融解決方案。
-      </p>
-    </div>
+    <HeroSection />
+    <AboutSection />
+    <ServicesSection />
+    <WhyChooseUsSection />
+    <CallToActionSection />
+  </Layout>
+)
 
-    {/* 關於我們 */}
-    <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
-      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>關於 KKBank</h2>
-      <p style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
-        KKBank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
-        我們的使命是通過創新的金融產品和個性化的服務，幫助客戶實現財務目標，共同創造美好未來。
-      </p>
-    </div>
+const HeroSection = () => (
+  <div style={styles.hero}>
+    <h1 style={styles.heroTitle}>歡迎來到 KKBank</h1>
+    <p style={styles.heroText}>
+      您信賴的金融合作夥伴，為您的未來提供安全、創新的金融解決方案。
+    </p>
+  </div>
+)
 
-    {/* 我們的服務 */}
-    <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>我們的服務</h2>
-    <div style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-      gap: '2rem',
-      marginBottom: '3rem'
-    }}>
+const AboutSection = () => (
+  <div style={styles.section}>
+    <h2 style={styles.sectionTitle}>關於 KKBank</h2>
+    <p style={styles.sectionText}>
+      KKBank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
+      我們的使命是通過創新的金融產品和個性化的服務，幫助客戶實現財務目標，共同創造美好未來。
+    </p>
+  </div>
+)
+
+const ServicesSection = () => (
+  <div style={styles.section}>
+    <h2 style={styles.sectionTitle}>我們的服務</h2>
+    <div style={styles.serviceGrid}>
       <ServiceCard 
         title="個人銀行" 
         description="為您的未來做好準備，探索我們的儲蓄和投資方案。" 
@@ -59,66 +58,135 @@ const IndexPage = () => (
         link="/online"
       />
     </div>
+  </div>
+)
 
-    {/* 為什麼選擇我們 */}
-    <div style={{ 
-      background: '#f0f8ff', 
-      padding: '3rem 2rem', 
-      borderRadius: '10px',
-      marginBottom: '3rem'
-    }}>
-      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選擇 KKBank</h2>
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-        gap: '2rem' 
-      }}>
-        <FeatureCard title="安全可靠" description="採用先進的安全技術，保護您的資產和隱私" />
-        <FeatureCard title="創新服務" description="持續推出創新的金融產品，滿足您不斷變化的需求" />
-        <FeatureCard title="專業團隊" description="經驗豐富的金融專家，為您提供專業的建議和服務" />
-        <FeatureCard title="便捷體驗" description="無論線上還是線下，都能享受便捷的銀行服務" />
-      </div>
+const WhyChooseUsSection = () => (
+  <div style={styles.whyChooseUs}>
+    <h2 style={styles.sectionTitle}>為什麼選擇 KKBank</h2>
+    <div style={styles.featureGrid}>
+      <FeatureCard title="安全可靠" description="採用先進的安全技術，保護您的資產和隱私" />
+      <FeatureCard title="創新服務" description="持續推出創新的金融產品，滿足您不斷變化的需求" />
+      <FeatureCard title="專業團隊" description="經驗豐富的金融專家，為您提供專業的建議和服務" />
+      <FeatureCard title="便捷體驗" description="無論線上還是線下，都能享受便捷的銀行服務" />
     </div>
+  </div>
+)
 
-    {/* 號召行動 */}
-    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>開始您的 KKBank 之旅</h2>
-      <p style={{ marginBottom: '1rem' }}>無論您是個人還是企業，我們都有適合您的金融解決方案。</p>
-      <Link to="/contact" style={{
-        background: '#003366',
-        color: 'white',
-        padding: '0.8rem 1.5rem',
-        borderRadius: '5px',
-        textDecoration: 'none',
-        fontWeight: 'bold'
-      }}>聯繫我們</Link>
-    </div>
-  </Layout>
+const CallToActionSection = () => (
+  <div style={styles.callToAction}>
+    <h2 style={styles.sectionTitle}>開始您的 KKBank 之旅</h2>
+    <p style={styles.callToActionText}>無論您是個人還是企業，我們都有適合您的金融解決方案。</p>
+    <Link to="/contact" style={styles.ctaButton}>聯繫我們</Link>
+  </div>
 )
 
 const ServiceCard = ({ title, description, link }) => (
-  <div style={{ 
-    background: 'white', 
-    padding: '1.5rem', 
-    borderRadius: '8px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-    transition: 'transform 0.3s ease-in-out',
-    ':hover': {
-      transform: 'translateY(-5px)'
-    }
-  }}>
-    <h3 style={{ color: '#003366', marginBottom: '0.5rem' }}>{title}</h3>
-    <p style={{ marginBottom: '1rem' }}>{description}</p>
-    <Link to={link} style={{ color: '#003366', fontWeight: 'bold' }}>了解更多 &rarr;</Link>
+  <div style={styles.card}>
+    <h3 style={styles.cardTitle}>{title}</h3>
+    <p style={styles.cardText}>{description}</p>
+    <Link to={link} style={styles.cardLink}>了解更多 &rarr;</Link>
   </div>
 )
 
 const FeatureCard = ({ title, description }) => (
-  <div style={{ textAlign: 'center' }}>
-    <h3 style={{ color: '#003366', marginBottom: '0.5rem' }}>{title}</h3>
-    <p>{description}</p>
+  <div style={styles.featureCard}>
+    <h3 style={styles.featureTitle}>{title}</h3>
+    <p style={styles.featureText}>{description}</p>
   </div>
 )
+
+const styles = {
+  hero: {
+    background: 'linear-gradient(135deg, #003366 0%, #0066cc 100%)',
+    color: 'white',
+    padding: '4rem 2rem',
+    borderRadius: '10px',
+    marginBottom: '2rem',
+    textAlign: 'center',
+  },
+  heroTitle: {
+    fontSize: '2.5rem',
+    marginBottom: '1rem',
+  },
+  heroText: {
+    fontSize: '1.2rem',
+    maxWidth: '600px',
+    margin: '0 auto',
+  },
+  section: {
+    marginBottom: '3rem',
+    textAlign: 'center',
+  },
+  sectionTitle: {
+    color: '#003366',
+    marginBottom: '1rem',
+  },
+  sectionText: {
+    maxWidth: '800px',
+    margin: '0 auto',
+    lineHeight: '1.6',
+  },
+  serviceGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+    gap: '2rem',
+  },
+  whyChooseUs: {
+    background: '#f0f8ff',
+    padding: '3rem 2rem',
+    borderRadius: '10px',
+    marginBottom: '3rem',
+  },
+  featureGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+    gap: '2rem',
+  },
+  callToAction: {
+    textAlign: 'center',
+    marginBottom: '3rem',
+  },
+  callToActionText: {
+    marginBottom: '1rem',
+  },
+  ctaButton: {
+    background: '#003366',
+    color: 'white',
+    padding: '0.8rem 1.5rem',
+    borderRadius: '5px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+  },
+  card: {
+    background: 'white',
+    padding: '1.5rem',
+    borderRadius: '8px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    transition: 'transform 0.3s ease-in-out',
+  },
+  cardTitle: {
+    color: '#003366',
+    marginBottom: '0.5rem',
+  },
+  cardText: {
+    marginBottom: '1rem',
+  },
+  cardLink: {
+    color: '#003366',
+    fontWeight: 'bold',
+  },
+  featureCard: {
+    textAlign: 'center',
+  },
+  featureTitle: {
+    color: '#003366',
+    marginBottom: '0.5rem',
+  },
+  featureText: {
+    // 无特殊样式
+  },
+}
 
 export const Head = () => <Seo title="首頁" />
 
