@@ -15,6 +15,7 @@ module.exports = {
     siteUrl: `https://www.kkbank.com/`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -34,8 +35,10 @@ module.exports = {
         background_color: `#003366`,
         theme_color: `#003366`,
         display: `minimal-ui`,
-        icon: `src/images/kkbank-icon.png`, // 您需要創建這個圖標文件
+        icon: `src/images/kkbank-icon.png`, // 確保這個圖標文件存在
       },
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }

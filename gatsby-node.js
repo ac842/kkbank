@@ -4,39 +4,38 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
-/**
- * @type {import('gatsby').GatsbyNode['createPages']}
- */
+const path = require('path')
+
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions
 
   // 創建 using-dsg 頁面
   createPage({
     path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
+    component: path.resolve("./src/templates/using-dsg.js"),
     context: {},
     defer: true,
   })
-
-  // 創建新的登陸頁面作為根路徑
-  createPage({
-    path: '/',
-    component: require.resolve('./src/pages/landing.js'),
-  })
 }
 
-/**
- * @type {import('gatsby').GatsbyNode['onCreatePage']}
- */
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
-  // 將原來的首頁移動到 /home 路徑
-  if (page.path === '/') {
+  // 如果存在 src/pages/index.js，將其移動到 /home
+  if (page.path === '/' && page.component.includes('src/pages/index.js')) {
     deletePage(page)
     createPage({
       ...page,
       path: '/home',
+    })
+  }
+
+  // 確保 landing.js 作為根路徑
+  if (page.component.includes('src/pages/landing.js')) {
+    deletePage(page)
+    createPage({
+      ...page,
+      path: '/',
     })
   }
 }
