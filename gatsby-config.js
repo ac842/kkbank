@@ -15,7 +15,10 @@ module.exports = {
     siteUrl: `https://www.NuoBank.com/`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,8 +26,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -34,8 +35,10 @@ module.exports = {
         background_color: `#003366`,
         theme_color: `#003366`,
         display: `minimal-ui`,
-        icon: `src/images/NuoBank-icon.png`, // 您需要創建這個圖標文件
+        icon: `src/images/NuoBank-icon.png`, // 確保這個圖標文件存在
       },
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }
