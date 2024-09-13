@@ -23,9 +23,9 @@ const IndexPage = () => (
 
     {/* 關於我們 */}
     <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
-      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>關於 NuoBank</h2>
+      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>關於NuoBankk</h2>
       <p style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
-        NuoBank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
+      NuoBanknk 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
         我們的使命是通過創新的金融產品和個性化的服務，幫助客戶實現財務目標，共同創造美好未來。
       </p>
     </div>
@@ -67,7 +67,7 @@ const IndexPage = () => (
       borderRadius: '10px',
       marginBottom: '3rem'
     }}>
-      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選擇 NuoBank</h2>
+      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選�NuoBankank</h2>
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
