@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `NuoBank`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `KKBank`} />
       <div
         style={{
           margin: `0 auto`,
