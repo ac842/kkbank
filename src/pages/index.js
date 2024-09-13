@@ -67,7 +67,7 @@ const IndexPage = () => (
       borderRadius: '10px',
       marginBottom: '3rem'
     }}>
-      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選�NuoBankank</h2>
+      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選NuoBankank</h2>
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
