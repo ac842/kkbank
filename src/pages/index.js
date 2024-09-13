@@ -15,7 +15,7 @@ const IndexPage = () => (
       marginBottom: '2rem',
       textAlign: 'center'
     }}>
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>歡迎來到 KKBank</h1>
+      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>歡迎來到 NuoBank</h1>
       <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
         您信賴的金融合作夥伴，為您的未來提供安全、創新的金融解決方案。
       </p>
@@ -23,9 +23,9 @@ const IndexPage = () => (
 
     {/* 關於我們 */}
     <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
-      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>關於 KKBank</h2>
+      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>關於 NuoBank</h2>
       <p style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
-        KKBank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
+        NuoBank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
         我們的使命是通過創新的金融產品和個性化的服務，幫助客戶實現財務目標，共同創造美好未來。
       </p>
     </div>
@@ -67,7 +67,7 @@ const IndexPage = () => (
       borderRadius: '10px',
       marginBottom: '3rem'
     }}>
-      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選擇 KKBank</h2>
+      <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '2rem' }}>為什麼選擇 NuoBank</h2>
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
@@ -82,7 +82,7 @@ const IndexPage = () => (
 
     {/* 號召行動 */}
     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>開始您的 KKBank 之旅</h2>
+      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>開始您的 NuoBank 之旅</h2>
       <p style={{ marginBottom: '1rem' }}>無論您是個人還是企業，我們都有適合您的金融解決方案。</p>
       <Link to="/contact" style={{
         background: '#003366',
