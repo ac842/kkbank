@@ -6,9 +6,9 @@ import Seo from "../components/seo"
 const AboutPage = () => (
   <Layout>
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-      <h1 style={{ color: '#003366', marginBottom: '1rem' }}>關於 NuoBank</h1>
+      <h1 style={{ color: '#003366', marginBottom: '1rem' }}>關於 nuobank</h1>
       <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-        NuoBank 是您值得信賴的金融合作夥伴。自1990年成立以來，我們一直致力於提供卓越的銀行服務，幫助個人和企業實現財務目標。
+        nuobank 是您值得信賴的金融合作夥伴。自1990年成立以來，我們一直致力於提供卓越的銀行服務，幫助個人和企業實現財務目標。
       </p>
       
       <h2 style={{ color: '#003366', marginBottom: '1rem' }}>我們的使命</h2>
@@ -26,7 +26,7 @@ const AboutPage = () => (
 
       <h2 style={{ color: '#003366', marginBottom: '1rem' }}>我們的成就</h2>
       <p>
-        30多年來，NuoBank 已經幫助數百萬客戶實現了他們的財務目標。我們榮獲多個行業獎項，包括「最佳客戶服務銀行」和「最具創新力銀行」等稱號。
+        30多年來，nuobank 已經幫助數百萬客戶實現了他們的財務目標。我們榮獲多個行業獎項，包括「最佳客戶服務銀行」和「最具創新力銀行」等稱號。
       </p>
     </div>
   </Layout>

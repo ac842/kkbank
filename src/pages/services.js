@@ -8,7 +8,7 @@ const ServicesPage = () => (
   <Layout>
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <h1 style={{ color: '#003366', marginBottom: '1rem' }}>我們的服務</h1>
-      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>NuoBank 提供全面的銀行服務，滿足您的各種金融需求。</p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>nuobank 提供全面的銀行服務，滿足您的各種金融需求。</p>
       <ul style={{ listStyle: 'none', padding: 0 }}>
         {[
           { title: '個人銀行', link: '/personal' },

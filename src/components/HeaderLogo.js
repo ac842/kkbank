@@ -6,7 +6,7 @@ export function HeaderLogo() {
   return (
     <StaticImage
       src="../images/logo.png"
-      alt="NuoBank Logo"
+      alt="nuobank Logo"
       placeholder="blurred"
       layout="fixed"
       width={100}
