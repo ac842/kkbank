@@ -8,7 +8,7 @@ const PersonalPage = () => (
   <Layout>
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <h1 style={{ color: '#003366', marginBottom: '1rem' }}>個人銀行服務</h1>
-      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>nuobank 為您提供全面的個人銀行服務，助您實現財務目標。</p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>NuoBank 為您提供全面的個人銀行服務，助您實現財務目標。</p>
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 

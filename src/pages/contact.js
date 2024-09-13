@@ -16,7 +16,7 @@ const ContactPage = () => (
         marginBottom: '2rem'
       }}>
         <ContactInfo icon="📞" title="電話" content="0800-123-456" />
-        <ContactInfo icon="✉️" title="電子郵件" content="info@nuobank.com" />
+        <ContactInfo icon="✉️" title="電子郵件" content="info@NuoBank.com" />
         <ContactInfo icon="🏢" title="地址" content="台北市信義區金融街1號" />
       </div>
 

@@ -8,7 +8,7 @@ const BusinessPage = () => (
   <Layout>
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <h1 style={{ color: '#003366', marginBottom: '1rem' }}>商業銀行服務</h1>
-      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>nuobank 為您的企業提供全面的金融解決方案，助力您的業務成長。</p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>NuoBank 為您的企業提供全面的金融解決方案，助力您的業務成長。</p>
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 

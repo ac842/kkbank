@@ -17,22 +17,22 @@ const LandingPage = () => (
     padding: '2rem'
   }}>
     <StaticImage
-      src="../images/nuobank-logo.png"
-      alt="nuobank Logo"
+      src="../images/logo.png"
+      alt="NuoBank Logo"
       placeholder="blurred"
       layout="fixed"
       width={200}
       height={100}
       style={{ marginBottom: '2rem' }}
     />
-    <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>歡迎來到 nuobank</h1>
+    <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>歡迎來到 NuoBank</h1>
     <p style={{ fontSize: '1.2rem', maxWidth: '600px', marginBottom: '2rem' }}>
       您值得信賴的金融夥伴，為您的未來提供安全、創新的金融解決方案。
     </p>
     <div style={{ marginBottom: '2rem' }}>
       <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>關於我們</h2>
       <p style={{ maxWidth: '800px', marginBottom: '1rem' }}>
-        nuobank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
+        NuoBank 成立於1990年，30多年來一直致力於為台灣民眾和企業提供卓越的金融服務。
         我們的使命是通過創新的金融產品和個性化的服務，幫助客戶實現財務目標，共同創造美好未來。
       </p>
     </div>
@@ -53,11 +53,11 @@ const LandingPage = () => (
         transition: 'all 0.3s ease'
       }}
     >
-      進入 nuobank
+      進入 NuoBank
     </Link>
   </div>
 )
 
-export const Head = () => <Seo title="歡迎來到 nuobank" />
+export const Head = () => <Seo title="歡迎來到 NuoBank" />
 
 export default LandingPage

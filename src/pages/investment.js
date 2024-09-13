@@ -8,7 +8,7 @@ const InvestmentPage = () => (
   <Layout>
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <h1 style={{ color: '#003366', marginBottom: '1rem' }}>投資服務</h1>
-      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>在 nuobank，我們提供多元化的投資方案，幫助您實現財務目標並確保未來的財務安全。</p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>在 NuoBank，我們提供多元化的投資方案，幫助您實現財務目標並確保未來的財務安全。</p>
       
       <h2 style={{ color: '#003366', marginBottom: '1rem' }}>我們的投資產品</h2>
       <div style={{ 
@@ -29,7 +29,7 @@ const InvestmentPage = () => (
         ))}
       </div>
 
-      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>為什麼選擇 nuobank 的投資服務?</h2>
+      <h2 style={{ color: '#003366', marginBottom: '1rem' }}>為什麼選擇 NuoBank 的投資服務?</h2>
       <ul style={{ marginBottom: '2rem' }}>
         <li>專業的投資顧問團隊</li>
         <li>多元化的投資組合選擇</li>
