@@ -30,7 +30,8 @@ const Header = ({ siteTitle }) => (
       <nav style={{ marginTop: `1rem` }}>
         <Link to="/personal" style={{ color: `white`, marginRight: `1rem` }}>個人銀行</Link>
         <Link to="/business" style={{ color: `white`, marginRight: `1rem` }}>商業銀行</Link>
-        <Link to="/services" style={{ color: `white`, marginRight: `1rem` }}>服務</Link>
+        <Link to="/investment" style={{ color: `white`, marginRight: `1rem` }}>投資服務</Link>
+        <Link to="/services" style={{ color: `white`, marginRight: `1rem` }}>所有服務</Link>
         <Link to="/online" style={{ color: `white`, marginRight: `1rem` }}>線上銀行</Link>
         <Link to="/contact" style={{ color: `white` }}>聯繫我們</Link>
       </nav>

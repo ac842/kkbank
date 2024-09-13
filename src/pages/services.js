@@ -11,7 +11,7 @@ const ServicesPage = () => (
     <ul>
       <li><Link to="/personal">個人銀行</Link></li>
       <li><Link to="/business">企業銀行</Link></li>
-      <li>投資服務</li>
+      <li><Link to="/investment">投資服務</Link></li>
       <li>貸款</li>
       <li><Link to="/online">線上銀行</Link></li>
     </ul>
