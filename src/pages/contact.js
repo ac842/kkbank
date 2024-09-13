@@ -7,7 +7,7 @@ const ContactPage = () => (
   <Layout>
     <h1>聯繫我們</h1>
     <p>電話：0800-123-456</p>
-    <p>電子郵件：info@NuoBank.com</p>
+    <p>電子郵件：info@kkbank.com</p>
     <p>地址：台北市信義區金融街1號</p>
   </Layout>
 )

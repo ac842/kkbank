@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 const BusinessPage = () => (
   <Layout>
     <h1>商業銀行服務</h1>
-    <p>NuoBank 為您的企業提供全面的金融解決方案，助力您的業務成長。</p>
+    <p>KKBank 為您的企業提供全面的金融解決方案，助力您的業務成長。</p>
     <ul>
       <li>企業帳戶</li>
       <li>商業貸款</li>

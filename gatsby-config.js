@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `NuoBank`,
-    description: `您值得信賴的金融合作夥伴。NuoBank 提供全面的個人和商業銀行服務,幫助您實現財務目標。`,
-    author: `@NuoBank`,
-    siteUrl: `https://www.NuoBank.com/`,
+    title: `KKBank`,
+    description: `您值得信賴的金融合作夥伴。KKBank 提供全面的個人和商業銀行服務,幫助您實現財務目標。`,
+    author: `@kkbank`,
+    siteUrl: `https://www.kkbank.com/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,13 +28,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `NuoBank-website`,
-        short_name: `NuoBank`,
+        name: `kkbank-website`,
+        short_name: `kkbank`,
         start_url: `/`,
         background_color: `#003366`,
         theme_color: `#003366`,
         display: `minimal-ui`,
-        icon: `src/images/NuoBank-icon.png`, // 您需要創建這個圖標文件
+        icon: `src/images/kkbank-icon.png`, // 您需要創建這個圖標文件
       },
     },
   ],

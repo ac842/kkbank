@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 const ServicesPage = () => (
   <Layout>
     <h1>我們的服務</h1>
-    <p>NuoBank 提供全面的銀行服務，滿足您的各種金融需求。</p>
+    <p>KKBank 提供全面的銀行服務，滿足您的各種金融需求。</p>
     <ul>
       <li><Link to="/personal">個人銀行</Link></li>
       <li><Link to="/business">企業銀行</Link></li>

@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 const InvestmentPage = () => (
   <Layout>
     <h1>投資服務</h1>
-    <p>在 NuoBank,我們提供多元化的投資方案,幫助您實現財務目標並確保未來的財務安全。</p>
+    <p>在 KKBank,我們提供多元化的投資方案,幫助您實現財務目標並確保未來的財務安全。</p>
     
     <h2>我們的投資產品</h2>
     <ul>
@@ -18,7 +18,7 @@ const InvestmentPage = () => (
       <li>退休計劃</li>
     </ul>
 
-    <h2>為什麼選擇 NuoBank 的投資服務?</h2>
+    <h2>為什麼選擇 KKBank 的投資服務?</h2>
     <ul>
       <li>專業的投資顧問團隊</li>
       <li>多元化的投資組合選擇</li>

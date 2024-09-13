@@ -5,8 +5,8 @@ import Seo from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <h1>關於 NuoBank</h1>
-    <p>NuoBank 是您值得信賴的金融合作夥伴。我們致力於提供卓越的銀行服務,幫助個人和企業實現財務目標。</p>
+    <h1>關於 KKBank</h1>
+    <p>KKBank 是您值得信賴的金融合作夥伴。我們致力於提供卓越的銀行服務,幫助個人和企業實現財務目標。</p>
   </Layout>
 )
 
